@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.arifrgilang.presentation.login.LoginFragment"
+        android:label="Himatif Apps">
+        <action
+            android:id="@+id/action_loginFragment_to_HDAFragment"
+            app:destination="@id/hdaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hdaFragment"
+        android:name="com.arifrgilang.presentation.hda.HDAFragment"
+        android:label="Himatif Database">
+        <action
+            android:id="@+id/action_HDAFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kkmFragment"
+        android:name="com.arifrgilang.presentation.kkm.KKMFragment"
+        android:label="KKM TI">
+        <action
+            android:id="@+id/action_KKMFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/keilmuanFragment"
+        android:name="com.arifrgilang.presentation.keilmuan.KeilmuanFragment"
+        android:label="Keilmuan">
+        <action
+            android:id="@+id/action_keilmuanFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hdaFragment"
+        android:checked="true"
+        android:icon="@drawable/ic_person"
+        android:title="HDA" />
+    <item
+        android:id="@+id/keilmuanFragment"
+        android:icon="@drawable/ic_keilmuan"
+        android:title="Keilmuan" />
+
+    <item
+        android:id="@+id/kkmFragment"
+        android:icon="@drawable/ic_baseline_laptop_chromebook_24"
+        android:title="KKM" />
+</menu>
